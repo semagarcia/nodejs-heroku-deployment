@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "serve": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,7 +18,10 @@
     "url": "https://github.com/semagarcia/nodejs-heroku-deployment/issues"
   },
   "homepage": "https://github.com/semagarcia/nodejs-heroku-deployment#readme",
-  "devDependencies": {
+  "dependencies": {
     "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
   }
 }
