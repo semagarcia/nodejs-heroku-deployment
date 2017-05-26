@@ -26,7 +26,7 @@ app.get('/test', (req, res) => {
 });
 
 app.get('/test-db', (req, res) => {
-    let RowEntry = mongoose.model('User', TestRowSchema);
+    let RowEntry = mongoose.model('RowEntries', TestRowSchema);
     let row = new RowEntry({ constName: 'Sema' });
     row.save((err) => {
         if(err) return res.status(500).send({ message: `Error inserting into DB: ${err}` });
