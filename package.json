@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/semagarcia/nodejs-heroku-deployment#readme",
   "dependencies": {
-    "express": "^4.15.3"
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.10.2"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
