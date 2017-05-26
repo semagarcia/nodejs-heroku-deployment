@@ -28,7 +28,11 @@ app.get('/test', (req, res) => {
 
 app.get('/test-db', (req, res) => {
     let RowEntry = mongoose.model('User', TestRowSchema);
-    let row = new RowEntry({ constName: 'Sema'  });
+    let row = new RowEntry({ constName: 'Sema' });
+    row.save((err) => {
+        if(err) return res.status(500).send({ message: `Error inserting into DB: ${err}` });
+        res.status(200).send({ result: 'ok' });
+    });
 });
 
 mongoose.connect(config.db, (err, res) => {
