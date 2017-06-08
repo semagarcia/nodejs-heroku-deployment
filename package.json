@@ -2,9 +2,9 @@
   "name": "nodejs-heroku-deployment",
   "version": "1.0.0",
   "description": "NodeJS repo to test Heroku deployment procedure",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "start": "node index.js",
+    "start": "node index.ts",
     "serve": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
